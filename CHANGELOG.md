@@ -1,3 +1,27 @@
+1.13.0-beta2 (In Progress)
+--------------------------
+
+Breaking Changes
+----------------
+
+* (Breaking Change) We now emit `(warning: PreflightTest.Warning)` object from PreflightTest.on('warning'),
+  rather than `(name: string, data: RTCWarning)`. The `PreflightTest.Warning` object has been updated
+  to match the following interface:
+  ```ts
+  export interface Warning {
+    description: string;
+    name: string;
+    rtcWarning?: RTCWarning;
+  }
+  ```
+
+Features
+--------
+
+* We now emit a PreflightTest.Warning (`insights-connection-error`) the first time Insights emits an
+  error, and add that Warning in `Report.warnings`.
+
+
 1.13.0-beta1 (July 7, 2020)
 =============================
 
