@@ -111,7 +111,7 @@ export class PreflightTest extends EventEmitter {
   private _endTime: number | undefined;
 
   /**
-   * Whether this test has already logged an insights-connection-warning.
+   * Whether this test has already logged an insights-connection-error.
    */
   private _hasInsightsErrored: boolean = false;
 
