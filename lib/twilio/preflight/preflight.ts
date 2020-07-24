@@ -72,7 +72,7 @@ export declare interface PreflightTest {
    * @example `preflight.on('warning', (name, data) => console.log({ name, data }))`
    * @event
    */
-  warningEvent(name: string, data: PreflightTest.Warning): void;
+  warningEvent(warning: PreflightTest.Warning): void;
 }
 
 /**
