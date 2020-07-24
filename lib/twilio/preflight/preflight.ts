@@ -210,7 +210,7 @@ export class PreflightTest extends EventEmitter {
   }
 
   /**
-   * Emit a {PreflightTest.Warning}
+   * Emit a {@link PreflightTest.Warning}
    */
   private _emitWarning(name: string, description: string, rtcWarning?: RTCWarning): void {
     const warning: PreflightTest.Warning = { name, description };
