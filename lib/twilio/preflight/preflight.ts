@@ -951,7 +951,7 @@ export namespace PreflightTest {
   }
 
   /**
-   * A warning that can be raised by Preflight, and returned in the Report.warnings field.
+   * A warning that can be raised by Preflight, and returned in the [[PreflightTest.Report.warnings]] field.
    */
   export interface Warning {
     /**
